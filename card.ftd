@@ -95,7 +95,7 @@ string link:
 border-radius.px: 10
 width.fixed.px: 340
 margin.px: 10
-overflow: auto
+overflow: hidden
 background.solid: white
 
 -- ftd.image: $mcard.product-image
