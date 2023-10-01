@@ -12,7 +12,7 @@ children wrapper:
 optional caption title:
 optional body body:
 boolean sidebar: false
-optional string document-title:
+optional string document-title: 
 optional string document-description:
 optional ftd.raw-image-src document-image:
 optional string site-name: fastn template
@@ -36,7 +36,7 @@ optional ftd.raw-image-src favicon:
 -- ftd.ui list page.footer:
 
 -- footer.fastn-footer:
-copyright: Copyright © 2023 - <user_name>.github.io/<repo_name>
+copyright: Copyright © 2023 - sreejitaduttaa.github.io/fastn-product-preview-card
 site-logo: $common.fastn-logo
 powered-by-text: Powered by
 powered-by-link: https://fastn.com/
