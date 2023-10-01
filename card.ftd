@@ -1,0 +1,201 @@
+-- boolean $show: false
+
+-- component dcard:
+caption category:
+string product:
+body desc:
+ftd.image-src product-image:
+string discounted-price:
+string actual-price:
+string link:
+
+-- ftd.row:
+width.fixed.px: 565
+height.fixed.px: 420
+overflow: auto
+border-radius.px: 10
+background.solid: white
+
+-- ftd.image: $dcard.product-image
+height.fixed.px: 420
+fit: fill
+
+-- ftd.column:
+padding.px: 30
+
+-- ftd.text: $dcard.category
+role: $category-type
+margin-bottom.px: 20
+color: #6c7289
+
+-- ftd.text: $dcard.product
+role: $product-type
+margin-bottom.px: 20
+color: #1c232b
+
+-- ftd.text: $dcard.desc
+role: $desc-type
+margin-bottom.px: 20
+color: #6c7289
+
+-- ftd.row:
+spacing.fixed.px: 18
+
+-- ftd.text: $dcard.discounted-price
+role: $discounted-price-type
+color: #3c8067
+
+-- ftd.text: $dcard.actual-price
+style: strike
+role: $actual-price-type
+align-self: center
+color: #6c7289
+
+-- end: ftd.row
+
+-- ftd.row:
+border-radius.px: 5
+margin-top.px: 20
+padding.px: 12
+spacing.fixed.px: 10
+background.solid if { show }: #1A4031
+background.solid: #3c8067
+width: fill-container
+align-content: center
+cursor: pointer
+link: $dcard.link
+$on-mouse-enter$: $ftd.set-bool($a = $show, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $show, v = false)
+
+-- ftd.image: $assets.files.assets.images.icon-cart.svg
+
+-- ftd.text: Add to Cart
+role: $cart-type
+color: white
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: dcard
+
+
+-- component mcard:
+caption category:
+string product:
+body desc:
+ftd.image-src product-image:
+string discounted-price:
+string actual-price:
+string link:
+
+-- ftd.column:
+border-radius.px: 10
+width.fixed.px: 340
+margin.px: 10
+overflow: auto
+background.solid: white
+
+-- ftd.image: $mcard.product-image
+width.fixed.px: 340
+height.fixed.px: 200
+fit: fill
+
+-- ftd.column:
+padding-top.px: 20
+padding.px: 30
+
+-- ftd.text: $mcard.category
+role: $category-type
+margin-bottom.px: 12
+color: #6c7289
+
+-- ftd.text: $mcard.product
+role: $product-type
+margin-bottom.px: 15
+color: #1c232b
+
+-- ftd.text: $mcard.desc
+role: $desc-type
+margin-bottom.px: 15
+color: #6c7289
+
+-- ftd.row:
+spacing.fixed.px: 18
+
+-- ftd.text: $mcard.discounted-price
+role: $discounted-price-type
+color: #3c8067
+
+-- ftd.text: $mcard.actual-price
+style: strike
+role: $actual-price-type
+align-self: center
+color: #6c7289
+
+-- end: ftd.row
+
+-- ftd.row:
+border-radius.px: 5
+margin-top.px: 20
+padding.px: 12
+spacing.fixed.px: 10
+background.solid if { show }: #1A4031
+background.solid: #3c8067
+width: fill-container
+align-content: center
+cursor: pointer
+link: $mcard.link
+$on-mouse-enter$: $ftd.set-bool($a = $show, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $show, v = false)
+
+-- ftd.image: $assets.files.assets.images.icon-cart.svg
+
+-- ftd.text: Add to Cart
+role: $cart-type
+color: white
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: mcard
+
+
+-- ftd.type category-type:
+font-family: $assets.fonts.Montserrat
+size.px: 11
+weight: 500
+letter-spacing.px: 5
+
+-- ftd.type product-type:
+font-family: $assets.fonts.Fraunces
+size.px: 30
+weight: 700
+line-height.px: 30
+
+-- ftd.type desc-type:
+font-family: $assets.fonts.Montserrat
+size.px: 13
+weight: 500
+line-height.px: 22
+
+-- ftd.type discounted-price-type:
+font-family: $assets.fonts.Fraunces
+size.px: 28
+weight: 700
+
+-- ftd.type actual-price-type:
+font-family: $assets.fonts.Montserrat
+size.px: 12
+weight: 500
+
+-- ftd.type cart-type:
+font-family: $assets.fonts.Montserrat
+size.px: 14
+weight: 700
+line-height.px: 20

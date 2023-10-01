@@ -12,7 +12,7 @@ children wrapper:
 optional caption title:
 optional body body:
 boolean sidebar: false
-optional string document-title:
+optional string document-title: 
 optional string document-description:
 optional ftd.raw-image-src document-image:
 optional string site-name: fastn template
