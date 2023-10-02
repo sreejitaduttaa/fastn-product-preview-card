@@ -2,6 +2,24 @@
 
 ![Design preview for the FAQ accordion card coding challenge](./assets/design/desktop-preview.jpg)
 
+
+## Information about the project
+
+It is a product preview card component.
+*Preview of component provided has been replicated!*
+
+**Features**
+
+- View the optimal layout for the component depending on your device's screen size
+- See hover states for all interactive elements on the page
+- `Add to Cart` button can be provided any link to render
+- Every text and image in the component can be modified by the user according to their need
+
+
+
+
+
+
 ## Welcome! 👋
 
 Thanks for checking out this fastn coding challenge.
